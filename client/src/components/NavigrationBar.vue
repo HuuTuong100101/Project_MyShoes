@@ -4,7 +4,7 @@
       <template #start>
         <img
           alt="logo"
-          src="https://i2.wp.com/www.terabox.vn/wp-content/uploads/2018/08/azure.microsoft.com_.png?ssl=1"
+          src="https://play-lh.googleusercontent.com/AhBDNrBsJ1bRQqbUkQJLHIUr59v14TWNl02qlaZuJp0oS4HmmF3feKicCOmRRCsfMEg"
           height="60"
           class="mr-2"
         />
@@ -23,7 +23,6 @@
 import Button from 'primevue/button';
 import Menubar from "primevue/menubar";
 import InputText from "primevue/inputtext";
-//import InputText from 'primevue/inputtext';
 export default {
   data() {
     return {
