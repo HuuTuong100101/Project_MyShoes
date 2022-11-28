@@ -33,7 +33,7 @@ const routes = [
   {
     path: "/checkout",
     name: "CheckOut",
-    component : ()=> import("@/views/CheckOut2.vue")
+    component : ()=> import("@/views/CheckOut.vue")
   },
   {
     path: "/admin/manage",

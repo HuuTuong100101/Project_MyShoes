@@ -59,7 +59,7 @@
                 label="Add to Cart"
                 :disabled="slotProps.data.inventoryStatus === 'OUTOFSTOCK'"
                 @click="addItem(slotProps.data)"
-                 v-if="this.cartStore.checkQuantityItems(slotProps.data) < slotProps.data.quantity"
+                v-if="this.cartStore.checkQuantityItems(slotProps.data) < slotProps.data.quantity"
               ></Button>
                <Button label="Secondary" class="p-button-secondary"  v-if="this.cartStore.checkQuantityItems(slotProps.data) >= slotProps.data.quantity">OUT OF STOCK</Button>
               <span
@@ -215,7 +215,9 @@ export default {
       }
       this.quantityCart++;
       this.cartStore.adjustItems(item , true);
+      this.$router.push('/cart')
     },
+
     async retrieveItems() {
       try {
         this.products = await Service.getAllItems();
@@ -252,6 +254,8 @@ export default {
   }
 
   .product-name {
+    text-decoration: none;
+    color: black;
     font-size: 1.5rem;
     font-weight: 700;
   }

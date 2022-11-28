@@ -23,4 +23,5 @@ app.get("/", (req, res) => {
 
 // setup
 setupRoutes(app);
+
 module.exports = app;
